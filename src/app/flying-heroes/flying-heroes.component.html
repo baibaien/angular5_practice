@@ -1,0 +1,12 @@
+<div>
+  <input type="text" #box
+  (keyup.enter)="addHero(box.value); box.value=''"
+  placeholder="hero name">
+  <button (click)="reset()">Reset</button>
+  <div *ngFor="let hero of (heroes | pipeTest)">
+    {{hero.name}}
+  </div>
+  <div *ngFor="let hero of (heroes | pipeImpureTest)">
+    impure: {{hero.name}}
+  </div>
+</div>

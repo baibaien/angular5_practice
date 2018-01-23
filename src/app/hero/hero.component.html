@@ -1,0 +1,18 @@
+<ul>
+  <li *ngFor="let hero of heros"
+      (click)="onSelectHero(hero)"
+      [class.selected]="hero === selectedHero">{{hero.name}}
+  </li>
+</ul>
+<ul>
+  <li *ngFor="let a of obj_array">{{a}}</li>
+</ul>
+<div>
+  <label>
+    Hero name
+    <input type="text" #heroName>
+  </label>
+  <button (click)="add(heroName.value); heroName.value=''">
+      add
+  </button>
+</div>

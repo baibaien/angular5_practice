@@ -1,0 +1,17 @@
+<div popup defaultColor="violet">aaaaa</div>
+<p [popup]="'orange'" >bbb</p>
+<p [popup]="'red'">ccc</p>
+<p [popup]="color" defaultColor="violet">dddd</p>
+
+<div>
+  pick a highlight color
+  <div>
+    <input type="radio" name="colors" (click)="color='purple'"/>
+    <input type="radio" name="colors" (click)="color='yellow'"/>
+    <input type="radio" name="colors" (click)="color='cyan'">
+  </div>
+</div>
+<div (click)="condition = !condition">切换condition</div>
+<div *unless="condition" class="unless a">测试结构指令A</div>
+<div *unless="!condition" class="unless b">测试结构指令B</div>
+<div [tooltip]="'test title'" style="padding:20px;">test</div>

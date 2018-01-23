@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.tip-wrapper{
+  position: relative;
+}
+.tooltip{
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width:auto;
+  padding: 8px;
+  border-radius: 5px;
+  border:1px solid #eaeaea;
+  background: rgba(0,0,0,0.4);
+  z-index: 100;
+  box-shadow: 0 0 4px rgba(0,0,0,0.6);
+  color:#fff;
+}
