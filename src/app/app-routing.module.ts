@@ -6,6 +6,8 @@ import {DashboardComponent} from './dashboard/dashboard.component'
 import {HeroDetailComponent} from './hero-detail/hero-detail.component'
 import {DirectiveComponent} from './directive/directive.component'
 import {FlyingHeroesComponent} from "./flying-heroes/flying-heroes.component";
+import {LazyloadTestModule} from "./lazyload-test/lazyload-test.module";
+import {LazyloadTestRoutingModule} from "./lazyload-test/lazyload-test-routing.module";
 
 const routes: Routes = [
   {
@@ -21,16 +23,18 @@ const routes: Routes = [
     path: 'dashboard', component: DashboardComponent
   },
   {
-    path: 'directive', component: DirectiveComponent
+    path: 'lazyload', loadChildren: './lazyload-test/lazyload-test.module#LazyloadTestModule'
   },
-  {
-    path: 'pipe', component: FlyingHeroesComponent
-  }
+  // {
+  //   path: '**', component: HeroComponent
+  // }
+
 ];
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    // LazyloadTestRoutingModule
   ],
   declarations: [],
   exports: [

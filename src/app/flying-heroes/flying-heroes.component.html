@@ -1,4 +1,8 @@
 <div>
+  <div style="background: red">
+    <input type="text" [(ngModel)]="name">
+    <label>name: {{name}}</label>
+  </div>
   <input type="text" #box
   (keyup.enter)="addHero(box.value); box.value=''"
   placeholder="hero name">

@@ -11,10 +11,12 @@ import {MessageService} from "./message.service";
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpService } from './http.service';
-import {DirectiveComponent, Popup, Tooltip, UnlessDirective} from './directive/directive.component';
-import { PipeTestPipe } from './pipe-test.pipe';
-import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
-import { PipeImpureTestPipe } from './pipe-impure-test.pipe';
+// import {DirectiveComponent, Popup, Tooltip, UnlessDirective} from './directive/directive.component';
+// import { PipeTestPipe } from './pipe-test.pipe';
+// import { FlyingHeroesComponent } from './flying-heroes/flying-heroes.component';
+// import { PipeImpureTestPipe } from './pipe-impure-test.pipe';
+// import { LazyloadTestComponent } from './lazyload-test/lazyload-test.component';
+import {LazyloadTestModule} from "./lazyload-test/lazyload-test.module";
 
 
 @NgModule({
@@ -24,19 +26,21 @@ import { PipeImpureTestPipe } from './pipe-impure-test.pipe';
     HeroDetailComponent,
     MessageComponent,
     DashboardComponent,
-    DirectiveComponent,
-    Popup,
-    UnlessDirective,
-    Tooltip,
-    PipeTestPipe,
-    FlyingHeroesComponent,
-    PipeImpureTestPipe
+    // DirectiveComponent,
+    // Popup,
+    // UnlessDirective,
+    // Tooltip,
+    // PipeTestPipe,
+    // FlyingHeroesComponent,
+    // PipeImpureTestPipe,
+    // LazyloadTestComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyloadTestModule
   ],
   providers: [
     HeroService,
