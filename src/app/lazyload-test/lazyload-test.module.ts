@@ -15,7 +15,7 @@ import {FormsModule} from "@angular/forms";
     LazyloadTestRoutingModule,
     FormsModule
   ],
-  exports: [],
+  exports: [CommonModule],
   declarations: [
     LazyloadTestComponent,
     DirectiveComponent,

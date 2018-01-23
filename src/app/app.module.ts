@@ -17,6 +17,7 @@ import { HttpService } from './http.service';
 // import { PipeImpureTestPipe } from './pipe-impure-test.pipe';
 // import { LazyloadTestComponent } from './lazyload-test/lazyload-test.component';
 import {LazyloadTestModule} from "./lazyload-test/lazyload-test.module";
+import { GraphqltestComponent } from './graphqltest/graphqltest.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {LazyloadTestModule} from "./lazyload-test/lazyload-test.module";
     HeroDetailComponent,
     MessageComponent,
     DashboardComponent,
+    GraphqltestComponent,
     // DirectiveComponent,
     // Popup,
     // UnlessDirective,
@@ -40,7 +42,6 @@ import {LazyloadTestModule} from "./lazyload-test/lazyload-test.module";
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    LazyloadTestModule
   ],
   providers: [
     HeroService,
